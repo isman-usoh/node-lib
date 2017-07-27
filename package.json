@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "preinstall": "",
+    "version": "npm run build && git add -f -A dist",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
