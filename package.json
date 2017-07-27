@@ -7,7 +7,7 @@
     "build": "tsc",
     "preinstall": "git checkout -b npm",
     "version": "npm run build && git add -f -A dist",
-    "postversion": "git push --tags && git checkout master && git branch -d npm && git push"
+    "postversion": "git push --tags && git checkout master && git push"
   },
   "repository": {
     "type": "git",
