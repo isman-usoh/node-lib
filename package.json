@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "preversion": "git checkout -b npm",
-    "version": "npm run build && git add -f -A dist",
-    "postversion": "git push --tags && git checkout master && git branch -D npm && git push"
+    "postversion": "git push origin master && git push --follow-tags"
   },
   "repository": {
     "type": "git",
